@@ -4,8 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priya's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    
+     <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e9f0f7 0%, #ffffff 100%);
+    color: #2c3e50;
+    line-height: 1.7;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: #34495e;
+    color: #ecf0f1;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(52, 73, 94, 0.3);
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+/* Navigation Bar */
+nav {
+    background: #2c3e50;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 0;
+    box-shadow: 0 2px 6px rgba(44, 62, 80, 0.4);
+}
+
+nav a {
+    color: #ecf0f1;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #e67e22;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px #e67e22;
+}
+
+/* Main Content Sections */
+section {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(44, 62, 80, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #e67e22;
+    padding-left: 12px;
+    letter-spacing: 0.05em;
+    user-select: none;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    color: #2c3e50;
+}
+
+.project {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dcdde1;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    list-style-type: disc;
+    color: #555;
+    line-height: 1.5;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-top: 0.4rem;
+}
+
+/* Links */
+a {
+    color: #e67e22;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #d35400;
+    text-decoration: underline;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+    letter-spacing: 0.05em;
+    user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 1.5rem 2rem;
+        margin: 2rem 1rem;
+    }
+    nav {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.7rem;
+        padding: 1.5rem 1rem;
+    }
+    section {
+        padding: 1rem 1rem;
+        margin: 1.5rem 1rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+}
+
+     </style>
     
 </head>
 <body>
