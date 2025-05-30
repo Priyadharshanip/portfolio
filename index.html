@@ -1,225 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priya's Portfolio</title>
-    
-     <style>
-        
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priya's Portfolio</title>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-body {
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #e9f0f7 0%, #ffffff 100%);
-    color: #2c3e50;
-    line-height: 1.7;
-    font-size: 16px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* Header */
-header {
-    background: #34495e;
-    color: #ecf0f1;
-    padding: 2rem 1rem;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(52, 73, 94, 0.3);
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    user-select: none;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f3e5f5 0%, #ffffff 100%);
+      color: #4a148c;
+      line-height: 1.7;
+      font-size: 16px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* Navigation Bar */
-nav {
-    background: #2c3e50;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 1rem 0;
-    box-shadow: 0 2px 6px rgba(44, 62, 80, 0.4);
-}
+    header {
+      background: #6a1b9a;
+      color: #fce4ec;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(106, 27, 154, 0.3);
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      user-select: none;
+    }
 
-nav a {
-    color: #ecf0f1;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+    nav {
+      background: #d0519f;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 1rem 0;
+      box-shadow: 0 2px 6px rgba(74, 20, 140, 0.4);
+    }
 
-nav a:hover,
-nav a:focus {
-    background-color: #e67e22;
-    color: #fff;
-    outline: none;
-    box-shadow: 0 0 8px #e67e22;
-}
+    nav a {
+      color: #fce4ec;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-/* Main Content Sections */
-section {
-    max-width: 900px;
-    margin: 2.5rem auto;
-    background: #fff;
-    padding: 2rem 3rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(44, 62, 80, 0.1);
-    transition: transform 0.3s ease;
-}
+    nav a:hover,
+    nav a:focus {
+      background-color: #ab47bc;
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 8px #ba68c8;
+    }
 
-section:hover {
-    transform: translateY(-5px);
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 2rem;
-    color: #34495e;
-    margin-bottom: 1.5rem;
-    border-left: 5px solid #e67e22;
-    padding-left: 12px;
-    letter-spacing: 0.05em;
-    user-select: none;
-}
-
-h3 {
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 0.6rem;
-    color: #2c3e50;
-}
-
-.project {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #dcdde1;
-}
-
-.project:last-child {
-    border-bottom: none;
-}
-
-ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-    list-style-type: disc;
-    color: #555;
-    line-height: 1.5;
-}
-
-ul ul {
-    list-style-type: circle;
-    margin-top: 0.4rem;
-}
-
-/* Links */
-a {
-    color: #e67e22;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover,
-a:focus {
-    color: #d35400;
-    text-decoration: underline;
-    outline: none;
-}
-
-/* Footer */
-footer {
-    background: #2c3e50;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-size: 0.9rem;
-    margin-top: auto;
-    letter-spacing: 0.05em;
-    user-select: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
     section {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(106, 27, 154, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      color: #6a1b9a;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #ab47bc;
+      padding-left: 12px;
+      letter-spacing: 0.05em;
+      user-select: none;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+      color: #4a148c;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      list-style-type: disc;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    ul ul {
+      list-style-type: circle;
+      margin-top: 0.4rem;
+    }
+
+    a {
+      color: #ab47bc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover,
+    a:focus {
+      color: #8e24aa;
+      text-decoration: underline;
+      outline: none;
+    }
+
+    footer {
+      background: #4a148c;
+      color: #fce4ec;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      margin-top: auto;
+      letter-spacing: 0.05em;
+      user-select: none;
+    }
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .about-image img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ba68c8;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .about-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-content {
+      max-width: 600px;
+    }
+
+    .about-section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-in-out;
+    }
+
+    .about-section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      section {
         padding: 1.5rem 2rem;
         margin: 2rem 1rem;
-    }
-    nav {
+      }
+      nav {
         gap: 1.5rem;
         flex-wrap: wrap;
-    }
-    nav a {
+      }
+      nav a {
         font-size: 1rem;
+      }
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
     }
-}
 
-@media (max-width: 480px) {
-    header {
+    @media (max-width: 480px) {
+      header {
         font-size: 1.7rem;
         padding: 1.5rem 1rem;
-    }
-    section {
+      }
+      section {
         padding: 1rem 1rem;
         margin: 1.5rem 1rem;
-    }
-    nav {
+      }
+      nav {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         padding: 1rem 0;
+      }
     }
-}
-
-     </style>
-    
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Welcome to my Page</h1>
-</header>
+  <header>
+    <h1>Welcome to My Page</h1>
+  </header>
 
-<nav>
+  <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-</nav>
+  </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm <strong>Priyadharshani</strong>, an enthusiastic full-stack developer currently pursuing my Bachelor's degree in Computer Science and Engineering at <strong>Madras Institute of Technology</strong>, Anna University.</p>
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="image.jpg" alt="Priya" />
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Priyadharshani</strong>, an enthusiastic full-stack developer currently pursuing my Bachelor's degree in Computer Science and Engineering at <strong>Madras Institute of Technology</strong>, Anna University.</p>
+        <p>I love building modern, responsive web applications and exploring new technologies. I actively solve coding problems on platforms like <strong>LeetCode</strong> and <strong>GeeksforGeeks</strong>.</p>
+        <p>In addition to programming, I'm passionate about playing games and dancing — they help me relax and stay creative.</p>
+      </div>
+    </div>
+  </section>
 
-    <p>I love building modern, responsive web applications and exploring new technologies. I actively solve coding problems on platforms like <strong>LeetCode</strong> and <strong>GeeksforGeeks</strong> using <strong>Java</strong> and <strong>C++</strong> to improve my problem-solving skills and algorithmic thinking.</p>
-
-    <p>In addition to programming, I'm passionate about playing games and dancing — they help me relax and stay creative. I always look forward to learning and growing in both technical and personal aspects.</p>
-
-</section>
-
-<section id="skills">
-    
+  <!-- Keep other sections like #skills, #projects, #contact here -->
+   <section id="skills">
     <h2>Skills</h2>
-    
+
     <h3>Programming Languages</h3>
     <ul>
         <li>Java</li>
         <li>C++</li>
         <li>JavaScript</li>
         <li>TypeScript</li>
-        <li>Python </li>
+        <li>Python</li>
         <li>C</li>
     </ul>
 
@@ -235,7 +261,7 @@ footer {
     <h3>Database & Tools</h3>
     <ul>
         <li>MongoDB</li>
-        <li>MySQL </li>
+        <li>MySQL</li>
         <li>Git & GitHub</li>
         <li>Postman</li>
         <li>VS Code</li>
@@ -258,8 +284,6 @@ footer {
     </ul>
 </section>
 
-
-
 <section id="projects">
     <h2>Projects</h2>
 
@@ -271,8 +295,8 @@ footer {
         <ul>
             <li><strong>Frontend:</strong> React.js, TypeScript, Tailwind CSS</li>
             <li><strong>Backend:</strong> Node.js, Express.js</li>
-            <li><strong>Database:</strong> MongoDB </li>
-            <li><strong>Features:</strong> 
+            <li><strong>Database:</strong> MongoDB</li>
+            <li><strong>Features:</strong>
                 <ul>
                     <li>Image upload with preview</li>
                     <li>Voice-to-text and text-to-speech functionality</li>
@@ -284,66 +308,74 @@ footer {
         </ul>
         <p><strong>Role:</strong> Full-stack Developer</p>
     </div>
+
     <div class="project">
-    <h3>🔐 C++ Login System with Smart Password Generator</h3>
-    <p>
-        A console-based mini project built using C++ that manages user login and registration using file handling. The system securely stores user credentials in a file and offers a smart password suggestion feature.
-    </p>
-    <ul>
-        <li><strong>Features:</strong>
-            <ul>
-                <li>User login and registration using file I/O</li>
-                <li>Random password suggestion based on user inputs (like name and date of birth)</li>
-                <li>Option to use the suggested password or enter a custom one</li>
-                <li>Basic input validation and duplicate user checking</li>
-            </ul>
-        </li>
-        <li><strong>Technologies Used:</strong> C++, File Streams , Basic Algorithms</li>
-        <li><strong>Role:</strong> Solo Developer</li>
-    </ul>
-</div>
-<div class="project">
-    <h3>🚑 First Aid Instruction Web App</h3>
-    <p>
-        A web application developed using Java and JSP to provide quick and reliable first aid guidance. The app delivers step-by-step instructions for common emergencies like burns, cuts, fractures, and CPR.
-    </p>
-    <ul>
-        <li><strong>Frontend:</strong> HTML, CSS, JSP</li>
-        <li><strong>Backend:</strong> Java (Servlets), Apache Tomcat</li>
-        <li><strong>Features:</strong>
-            <ul>
-                <li>User-friendly interface to select injury type</li>
-                <li>Dynamically loads the appropriate first aid instructions</li>
-                <li>Educational and practical use cases</li>
-            </ul>
-        </li>
-        <li><strong>Role:</strong> Backend Developer (JSP, Servlets)</li>
-    </ul>
-</div>
+        <h3>🔐 C++ Login System with Smart Password Generator</h3>
+        <p>
+            A console-based mini project built using C++ that manages user login and registration using file handling. The system securely stores user credentials in a file and offers a smart password suggestion feature.
+        </p>
+        <ul>
+            <li><strong>Features:</strong>
+                <ul>
+                    <li>User login and registration using file I/O</li>
+                    <li>Random password suggestion based on user inputs (like name and date of birth)</li>
+                    <li>Option to use the suggested password or enter a custom one</li>
+                    <li>Basic input validation and duplicate user checking</li>
+                </ul>
+            </li>
+            <li><strong>Technologies Used:</strong> C++, File Streams, Basic Algorithms</li>
+            <li><strong>Role:</strong> Solo Developer</li>
+        </ul>
+    </div>
 
-
+    <div class="project">
+        <h3>🚑 First Aid Instruction Web App</h3>
+        <p>
+            A web application developed using Java and JSP to provide quick and reliable first aid guidance. The app delivers step-by-step instructions for common emergencies like burns, cuts, fractures, and CPR.
+        </p>
+        <ul>
+            <li><strong>Frontend:</strong> HTML, CSS, JSP</li>
+            <li><strong>Backend:</strong> Java (Servlets), Apache Tomcat</li>
+            <li><strong>Features:</strong>
+                <ul>
+                    <li>User-friendly interface to select injury type</li>
+                    <li>Dynamically loads the appropriate first aid instructions</li>
+                    <li>Educational and practical use cases</li>
+                </ul>
+            </li>
+            <li><strong>Role:</strong> Backend Developer (JSP, Servlets)</li>
+        </ul>
+    </div>
 </section>
-
 
 <section id="contact">
     <h2>Contact Me</h2>
     <p>I'd love to hear from you! Feel free to reach out through the following platforms:</p>
-
     <ul>
         <li><strong>Email:</strong> <a href="mailto:priyadharshanippd@gmail.com">priyadharshanippd@gmail.com</a></li>
-<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priyadharshani-p" target="_blank" rel="noopener noreferrer">linkedin.com/in/priyadharshani-p</a></li>
-<li><strong>GitHub:</strong> <a href="https://github.com/Priyadharshanip" target="_blank" rel="noopener noreferrer">github.com/Priyadharshanip</a></li>
-
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priyadharshani-p" target="_blank" rel="noopener noreferrer">linkedin.com/in/priyadharshani-p</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Priyadharshanip" target="_blank" rel="noopener noreferrer">github.com/Priyadharshanip</a></li>
     </ul>
-
-
-    
 </section>
 
-
-<footer>
+  <footer>
     <p>&copy; 2025 Priyadharshani. All rights reserved.</p>
-</footer>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < triggerBottom) {
+          section.classList.add("show");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
 
 </body>
 </html>
